@@ -1,1 +1,1 @@
-let pokemonList = [];
+let pokemonList =[];
