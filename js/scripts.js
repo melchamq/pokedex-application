@@ -1,6 +1,9 @@
+//Pokedex application project
+
 let pokemonList = [
-  { name: 'Bulbasaur', height: 7, type: 'grass', 'poison' },
-  { name: 'Charmander', height: 8, type: 'fire' },
-  { name: 'Squirtle', height: 9, type: 'water' },
-  { name: 'Ponyta', height: 10, type: 'fire' }
+  { name: 'Rapidash', height: 10, type: 'fire' },
+  { name: 'Haunter', height: 9, type: 'ghost', 'poison' },
+  { name: 'Articuno', height: 15, type: 'ice', 'flying' },
+  { name: 'Houndoom', height: 8, type: 'dark', 'fire' },
+  { name: 'Marill' height: 5, type: 'fairy', 'water' }
 ];
