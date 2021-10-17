@@ -13,6 +13,6 @@ console.log(pokemonList);
 
 for (let i=0; i <pokemonList.length; i++) {
   if (pokemonList[i].height >11) {
-  document.write(pokemonList[i].name + ' - Wow that's big!');
+  document.write(pokemonList[i].name + ' - Wow that\'s big!');
   }
 }
