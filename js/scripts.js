@@ -8,11 +8,5 @@ let pokemonList = [
   { name: 'Marill', height: 3, type: ['fairy', 'water'] };
 ];
 
-pokemonList = [pokemon1, pokemon2, pokemon3, pokemon4, pokemon5];
-console.log(pokemonList);
-
-for (let i=0; i <pokemonList.length; i++) {
-  if (pokemonList[i].height >11) {
-  document.write(pokemonList[i].name + ' - Wow that\'s big!');
-  }
-}
+for (i = 0; i < pokemonList.length; i++)
+  { document.write('<li>', pokemonList[i], '</li>') }
