@@ -1,6 +1,6 @@
 //Pokedex application project
 
-let pokemonList = [
+let repository = [
   { name: 'Rapidash', height: 1.8, type: ['fire'] },
   { name: 'Haunter', height: 1.5, type: ['ghost', 'poison'] },
   { name: 'Articuno', height: 2, type: ['ice', 'flying'] },
@@ -8,12 +8,17 @@ let pokemonList = [
   { name: 'Marill', height: 0.5, type: ['fairy', 'water'] },
 ];
 
-console.log(pokemonList);
+console.log(repository);
 
-for (let i = 0; i < pokemonList.length; i++) {
-  if (pokemonList[i].height > 1.9) {
-    document.write('<li>'+ pokemonList[i].name + ' (height: ' + pokemonList[i].height + 'm)' + '  <b> *Wow- that\'s big!* </b></li>')
-  } else {
-      document.write('<li>' + pokemonList[i].name + ' (height: ' + pokemonList[i].height + 'm)</li>')
-    }
+function printArrayDetails() {
+  for (let i = 0; i < repository.length; i++) {
+    if (repository[i].height > 1.9) {
+      document.write('<li>'+ repository[i].name + ' (height: ' + repository[i].height + 'm)' + '  <b> *Wow- that\'s big!* </b></li>')
+    } else {
+        document.write('<li>' + repository[i].name + ' (height: ' + repository[i].height + 'm)</li>')
+      }
+  }
 }
+
+printArrayDetails();
+printArrayDetails();
