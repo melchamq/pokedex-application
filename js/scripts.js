@@ -16,17 +16,16 @@ let pokemonList2 = [
   { name: 'Lickitung', height: 1.2, type: ['normal'] },
 ];
 
-console.log(repository);
-
-function printArrayDetails() {
-  for (let i = 0; i < repository.length; i++) {
-    if (repository[i].height > 1.9) {
-      document.write('<li>'+ repository[i].name + ' (height: ' + repository[i].height + 'm)' + '  <b> *Wow- that\'s big!* </b></li>')
+function printArrayDetails(list) {
+  for (let i = 0; i < list.length; i++) {
+    if (list[i].height > 1.9) {
+      document.write('<li>'+ list[i].name + ' (height: ' + list[i].height + 'm)' + '  <b> *Wow- that\'s big!* </b></li>')
     } else {
-        document.write('<li>' + repository[i].name + ' (height: ' + repository[i].height + 'm)</li>')
+        document.write('<li>' + list[i].name + ' (height: ' + list[i].height + 'm)</li>')
       }
+    console.log(list[i].name);
   }
 }
 
-printArrayDetails();
-printArrayDetails();
+printArrayDetails(pokemonList);
+printArrayDetails(pokemonList2);
